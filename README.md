@@ -11,33 +11,37 @@ Tables used across all projects:
 
   Tables Overview:
 
-| Table Name             | Column Name         | Description |
-|------------------------|---------------------|-------------|
-| players                | player_id           | Unique player identifier |
-|                        | registration_date   | Player signup date |
-|                        | country             | Player country |
-|                        | vip_level           | Loyalty / VIP tier |
-
-| player_sessions        | session_id          | Unique session identifier |
-|                        | player_id           | Player foreign key |
-|                        | session_start       | Session login timestamp |
-|                        | session_end         | Session logout timestamp |
-
-| transactions           | transaction_id      | Unique transaction ID |
-|                        | player_id           | Player foreign key |
-|                        | transaction_time    | Deposit timestamp |
-|                        | amount              | Deposit amount |
-
-| game_events            | event_id            | Unique event identifier |
-|                        | player_id           | Player foreign key |
-|                        | event_time          | Event timestamp |
-|                        | event_type          | Bet / Win / Loss |
-
-| campaign_attribution   | player_id           | Player foreign key |
-|                        | campaign_name       | Campaign identifier |
-|                        | channel             | Acquisition channel |
-
-
+{
+  "players": {
+    "player_id": "Unique player identifier",
+    "registration_date": "Player signup date",
+    "country": "Player country",
+    "vip_level": "Loyalty / VIP tier"
+  },
+  "player_sessions": {
+    "session_id": "Unique session identifier",
+    "player_id": "Player foreign key",
+    "session_start": "Session login timestamp",
+    "session_end": "Session logout timestamp"
+  },
+  "transactions": {
+    "transaction_id": "Unique transaction ID",
+    "player_id": "Player foreign key",
+    "transaction_time": "Deposit timestamp",
+    "amount": "Deposit amount"
+  },
+  "game_events": {
+    "event_id": "Unique event identifier",
+    "player_id": "Player foreign key",
+    "event_time": "Event timestamp",
+    "event_type": "Bet / Win / Loss"
+  },
+  "campaign_attribution": {
+    "player_id": "Player foreign key",
+    "campaign_name": "Campaign identifier",
+    "channel": "Acquisition channel"
+  }
+}
 
 
 
